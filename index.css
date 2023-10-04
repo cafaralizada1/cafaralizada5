@@ -1,0 +1,220 @@
+/* reset css */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 6px;
+}
+
+.header-main,.main-container {
+    width: 95%;
+    margin: auto;
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.right li {
+    display: inline-block;
+    margin-left: 40px;
+    padding: 3px 0px;
+}
+
+.right li a {
+    color: #999;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.right li a:hover {
+    color: #666;
+}
+
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-img {
+    width: 15%;
+}
+
+/* All img tag */
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-input {
+    width: 40%;
+    position: relative;
+}
+
+#search {
+    padding: 14px 40px 14px 15px;
+    width: 100%;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+}
+
+#search:focus{
+    border: 2px solid orange;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+.account-navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.account-navigation-container div {
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27%3E%3Cpath fill=%27%23F27A1A%27 d=%27M18.711 17.306l-4.684-4.703a7.49 7.49 0 0 0 1.864-4.932C15.891 3.441 12.327 0 7.946 0S0 3.441 0 7.671s3.565 7.671 7.946 7.671a8.056 8.056 0 0 0 4.552-1.388l4.72 4.74c.197.197.462.306.746.306.27 0 .525-.1.718-.28a.977.977 0 0 0 .03-1.414zM7.946 2.001c3.238 0 5.873 2.544 5.873 5.67 0 3.127-2.635 5.67-5.873 5.67-3.239 0-5.873-2.543-5.873-5.67 0-3.126 2.634-5.67 5.873-5.67z%27/%3E%3C/svg%3E");
+    position: absolute;
+    right: 12px;
+    bottom: calc(50% - 8.5px);
+    cursor: pointer;
+}
+
+.navigation-wrapper ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4px;
+}
+.navigation-wrapper ul .new-badges{
+    color: white;
+    background-color: #dc2e2e;
+    border-radius: 16px;
+    font-size: 10px;
+    font-family: sans-serif;
+    padding: 1.5px 2.5px
+}
+.navigation-wrapper ul li a{
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navigation-wrapper ul li a:hover{
+    color: orange;
+    border-bottom: 3px solid orange;
+    padding-bottom: 4px;
+    transition: all 0.5s;
+}
+.navigation-wrapper ul li a:hover .new-badges{
+    background-color: orange;
+}
+.section-images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-top: 30px;
+}
+.box-image{
+    width: 6%;
+}
+.box-image .img-text span{
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    transition: all 0.5s;
+}
+.box-image img{
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.box-image:hover .img-text span{
+    color: #dc2e2e;
+}
+.box-image img:hover{
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+
+.most-popular-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+.most-popular-links a{
+    display: inline-block;
+    width: 25%;
+}
+
+.section-cards{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px 0px;
+}
+.section-cards .card{
+    width: 30%;
+}
+.card .card-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .card-img img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all 0.5s; 
+}
+.card .card-footer{
+    position: relative;
+    background-color: #000;
+    padding: 8px 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s;
+}
+.card .card-footer span{
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.card .card-footer .hidden-text{
+    display: none;
+}
+.card:hover .card-footer .hidden-text{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+    transition: all 0.5s;
+}
+.card:hover .card-footer{
+    background-color: orange;
+}
+.card:hover .card-img img{
+    transform: scale(1.02);
+}
+
+
